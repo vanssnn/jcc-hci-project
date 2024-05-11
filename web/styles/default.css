@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css');
+
+:root{
+    --text-col: #06090E;
+    --background-col: #FBFCFD;
+    --accent-col: #3C5686;
+    --btn-primary-col: #344B74;
+    --btn-secondary-col: #EDF1F7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+    text-decoration: none;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--background-col);
+}
+
+p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-col);
+}
+
+ul{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-col);
+}
+
+h1{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 117px;
+    color: var(--text-col);
+}
+
+h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: var(--text-col);
+}
+
+h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--text-col);
+}
+
+h4{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--text-col);
+}
+
+h5{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;   
+    color: var(--text-col);
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px 60px;
+    gap: 10px;
+
+    background: var(--text-col);
+
+}
+
+.nav-text-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 3.47vw;
+}
+
+.nav-text-container h5{
+    color: var(--background-col);
+    text-align: center;
+}
+
+.nav-text-container h5:hover{
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        padding: 10px 20px;
+        gap: 10px;
+    
+        background: var(--text-col);
+    
+    }
+
+    .nav-text-container{
+        display: block;
+        align-self: stretch;
+        padding: 0px;        
+    }
+
+    .nav-text-container a h5{
+        border-style: solid; 
+        border-color: var(--background-col);
+        border-width: 1px 0px 0px 0px;
+        padding: 10px;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 14px;
+
+    background: var(--text-col);
+}
+
+footer p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: var(--background-col);
+    text-align: center;
+}
+
+.about-and-contact{
+    margin: 4px 6px;
+}
+
+.about-and-contact h4{
+    display: inline;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: var(--background-col);
+    text-align: center;
+}
+
+.about-and-contact a h4{
+    text-decoration-line: underline;
+}
+
+.social i{
+    font-size: 32px;
+    color: var(--background-col);
+    margin: 20px;
+}
+
+/* BUTTON */
+
+.btn-primary{
+    display: inline-block;
+    padding: 6px;
+    background: var(--btn-primary-col);
+    border-radius: 12px;
+    transition: box-shadow 300ms;
+}
+
+.btn-primary h5{
+    box-sizing: border-box;
+    padding: 18px 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--background-col);
+    border-radius: 8px;
+    
+    color: var(--background-col);
+    text-align: center;
+}
+
+.btn-primary:hover{
+    transition-timing-function: ease-out;
+    box-shadow: inset 0px 0px 60px -10px rgba(237, 241, 247, 0.5);
+}
+
+.btn-secondary{
+    display: inline-block;
+    padding: 6px;
+    background: var(--btn-secondary-col);
+    border-radius: 12px;
+    transition: box-shadow 300ms;
+}
+
+.btn-secondary h5{
+    
+    box-sizing: border-box;
+    padding: 18px 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--text-col);
+    border-radius: 8px;
+    
+    color: var(--text-col);
+    text-align: center;
+}
+
+.btn-secondary:hover{
+    transition-timing-function: ease-out;
+    box-shadow: inset 0px 0px 60px -10px rgba(60, 86, 134, 0.5);
+}
+
+/* LINE */
+
+.lineh{
+    align-self: stretch;
+    height: 4px;
+    background-color: var(--accent-col);
+}
+
+.linev{
+    align-self: stretch;
+    width: 8px;
+    background-color: var(--accent-col);
+}

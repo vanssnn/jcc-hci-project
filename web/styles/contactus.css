@@ -1,0 +1,119 @@
+.content h1{
+    text-align: center;
+    text-justify: center;
+    margin: 60px 10px;
+    color: var(--text-col);
+}
+
+.lineh{
+    margin-bottom: 60px;
+}
+
+.item{
+    margin: 0 100px;
+}
+
+.item h2{
+    margin-bottom: 24px;
+}
+
+.input-box{
+    margin-bottom: 24px;
+}
+
+.input-message{
+    margin-bottom: 24px
+}
+
+.input-checkbox{
+    display: block;
+    margin-bottom: 24px
+}
+
+.input-checkbox p{
+    display: inline-block;
+}
+
+label h4{
+    margin-bottom: 5px;
+}
+
+.input-checkbox-option{
+    margin-bottom: 2px;
+}
+
+
+input[type="text"], input[type="tel"], textarea{
+    width: 98%;
+    padding: 10px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-col);
+    
+    border-radius: 5px;
+    border: 1px solid var(--text-col);
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, textarea:focus{
+    outline: none;
+    border-color: var(--accent-col);
+    box-shadow: 0 0 5px var(--accent-col);
+}
+
+input[type="submit"]{
+    background-color: rgba(0, 0, 0, 0);
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;   
+
+    box-sizing: border-box;
+    padding: 18px 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--background-col);
+    border-radius: 8px;
+    
+    color: var(--background-col);
+    text-align: center;
+}
+
+input[type="reset"]{
+    background-color: rgba(0, 0, 0, 0);
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;   
+
+    box-sizing: border-box;
+    padding: 18px 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--text-col);
+    border-radius: 8px;
+    
+    color: var(--text-col);
+    text-align: center;
+}
+
+.btn-secondary{
+    margin-right: 24px;
+}
+
+.error{
+    color: red;
+}
+
+.btn{
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .item{
+        margin: 0 30px;
+    }
+}

@@ -1,0 +1,90 @@
+.content h1{
+    text-align: center;
+    text-justify: center;
+    margin: 60px 10px;
+    color: var(--text-col);
+}
+
+.lineh{
+    margin-bottom: 60px;
+}
+
+.item{
+    margin: 0 100px;
+}
+
+.item p{
+    text-align: justify;
+}
+
+.item h2{
+    margin-bottom: 24px;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+    gap: 50px;
+}
+
+.card{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 12px;
+
+    background: var(--btn-secondary-col);
+
+    border: 2px solid #344B74;
+    box-shadow: 0px 0px 40px rgba(52, 75, 116, 0.25);
+    border-radius: 10px;
+}
+
+.card img{
+    border-radius: 10px;
+}
+
+.card p{
+    text-align: justify;
+}
+
+.card ul{
+    align-self: flex-start;
+    padding-left: 24px;
+}
+
+.card h3{
+    text-align: center;
+}
+
+.card h4{
+    text-align: center;
+}
+
+.btn-secondary{
+    margin: 24px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .item{
+        margin: 0 15px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1108px) {
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 40px 0px;
+        gap: 40px;
+    }
+}
